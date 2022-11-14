@@ -2,13 +2,17 @@
 
 Implement all instructions for RISC-V including Branch instructions
 
+## Note
+
+- This is a part of course work - EE2003: Computer Organisation (Jul-Nov, 2022) from IIT-M. For this Single cycle CPU (All Instructions), I have designed hardware description on Verilog (cpu.v) and synthesis in Vivado. And I have Implemented it in PYNQ-1 board. And this testbench is not a part of my work (done by course Instructors).
+
 ## Goals
 
 - Implement all instructions of the RV32I set to make a single cycle CPU.
 
 ## Given
 
-The goal of the single cycle CPU is to implement all instructions (except `FENCE`, `ECALL` and `EBREAK`) in the RV32I instruction set (pg. 130 of riscv-spec.pdf uploaded on Moodle).  For this, we will assume a simplified memory model, where data and instruction memory can be read in a single cycle (provide the address, and the memory responds with data in the same cycle), while allowing write at the next edge of the clock.  You are already provided with memory modules that behave as required, along with the following:
+The goal of the single cycle CPU is to implement all instructions (except `FENCE`, `ECALL` and `EBREAK`) in the RV32I instruction set (pg. 130 of riscv-spec.pdf- attached).  For this, we will assume a simplified memory model, where data and instruction memory can be read in a single cycle (provide the address, and the memory responds with data in the same cycle), while allowing write at the next edge of the clock.  You are already provided with memory modules that behave as required, along with the following:
 
 - Test bench with test cases including BRANCH instructions
     - Test bench will feed one input instruction per clock cycle
@@ -38,9 +42,3 @@ The file `dump.s` in the top folder also shows an example of assembly code that 
 $ riscv32-unknown-elf-gcc -c dump.s
 $ riscv32-unknown-elf-objdump -d -Mnumeric,no-aliases dump.o
 ```
-
-### Grading
-
-This and the previous assignment (ALU + L/S) use the same test setup.  Therefore if you submit the same code for both that is perfectly fine.  However, if you have trouble implementing branching, you are advised to ensure that the Load/Store is correctly implemented first.
-
-Demonstrate the working simulation first to your TA, and then move on to the hardware demo on FPGA.  Both are required and you will need to explain the functioning of your code to the TA.
