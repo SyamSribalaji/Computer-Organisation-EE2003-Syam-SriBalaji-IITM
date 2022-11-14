@@ -4,7 +4,7 @@ Implement ALU and Load/Store instructions from RISC-V RV32I set
 
 ## Note
 
-- This is a part of course work - EE2003: Computer Organisation (Jul-Nov, 2022) from IIT-M. For this Single cycle CPU (ALU+Load_Store), I have done designed hardware description on Verilog (cpu.v) and synthesis in Vivado. And I have done Implementation in PYNQ-1 board. And this testbench is not my part of work (done by course Instructors).
+- This is a part of course work - EE2003: Computer Organisation (Jul-Nov, 2022) from IIT-M. For this Single cycle CPU (ALU+Load_Store), I have designed hardware description on Verilog (cpu.v) and synthesis in Vivado. And I have Implemented it in PYNQ-1 board. And this testbench is not a part of my work (done by course Instructors).
 
 ## Goals
 
@@ -42,10 +42,3 @@ The file `dump.s` in the top folder also shows an example of assembly code that 
 $ riscv32-unknown-elf-gcc -c dump.s
 $ riscv32-unknown-elf-objdump -d -Mnumeric,no-aliases dump.o
 ```
-
-### Grading
-
-Assignment `alu_loadstore` (ALU + Load/Store) and `singlecycle` (Full single cycle CPU) use the same test bench, and only differ in the test cases.  You are strongle advised though to implement the ALU first to make debugging easier.
-
-You first need to demo your code to the TAs in simulation, and then add the appropriate wrapper code to demonstrate it working on the FPGA hardware.  
-
