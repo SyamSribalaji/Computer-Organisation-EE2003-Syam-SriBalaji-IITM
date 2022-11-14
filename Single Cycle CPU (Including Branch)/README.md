@@ -4,7 +4,7 @@ Implement all instructions for RISC-V including Branch instructions
 
 ## Note
 
-- This is a part of course work - EE2003: Computer Organisation (Jul-Nov, 2022) from IIT-M. For this Single cycle CPU (All Instructions), I have designed hardware description on Verilog (cpu.v) and synthesis in Vivado. And I have Implemented it in PYNQ-1 board. And this testbench is not a part of my work (done by course Instructors).
+- This is a part of course work - EE2003: Computer Organisation (Jul-Nov, 2022) from IIT-M. For this Single cycle CPU (All Instructions), I designed hardware description on Verilog (cpu.v) and synthesis in Vivado. And I have Implemented it in PYNQ-1 board. And this testbench is not a part of my work (done by course Instructors).
 
 ## Goals
 
